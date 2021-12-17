@@ -1,0 +1,22 @@
+standard input
+command
+information
+
+such as
+1
+1000000000
+
+command table
+0-add a student information.
+1-transfer student to a different class
+2-modificate the telephone number.
+3-transfer student to a dormitory.
+4-search a dormitory information.
+5-search a class information.
+6-search the same hobby student.
+7-search student telephone.
+8-search a hometown information.
+9-table all student information.
+10-delete student data.
+help-show the help table.
+exit-close the system.
