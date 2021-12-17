@@ -378,13 +378,16 @@ namespace CKW {
 			Thread_data[i].next = next;
 			Thread_data[i].begin = (All_data.size() / 8 * i) + All_data.size() % 8;
 		}
+
 		for (int i = 0; i < 8; i++) {
 			using_Thread[i] = std::thread(KMP_class, &Thread_data[i]);
 		}
+
 		static mutex m;
 		for (int i = 0; i < 8; i++) {
 			using_Thread[i].join();
 		}
+
 		lock_guard<mutex> lusg(m);
 
 		if (temp_data.size() == 0) {
